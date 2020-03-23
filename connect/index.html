@@ -11,9 +11,19 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js"></script>
+    <style>
+        .text {
+            font-size: 56px;
+            background-color: darkolivegreen;
+            color: white;
+            padding: 20px;
+        }
+    </style>
     <script>
         ReactDOM.render(
-            React.createElement("div", null, "test"),
+            React.createElement("div", {
+                className: "text"
+            }, "test"),
             document.getElementById('root'),
         );
     </script>
