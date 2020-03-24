@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://cdn.jsdeliver.net">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect</title>
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <div id="root">
+        init
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js"></script>
+    <style>
+        .text {
+            font-size: 56px;
+            background-color: darkolivegreen;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        ReactDOM.render(
+            React.createElement("div", {
+                className: "text"
+            }, "test"),
+            document.getElementById('root'),
+        );
+    </script>
+</body>
+</html>
