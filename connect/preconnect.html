@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://cdn.jsdeliver.net">
+    <link rel="preconnect" href="https://www.mocky.io">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect</title>
@@ -22,12 +22,14 @@
         }
     </style>
     <script>
-        ReactDOM.render(
-            React.createElement("div", {
-                className: "text"
-            }, "test"),
-            document.getElementById('root'),
-        );
+        fetch('https://www.mocky.io/v2/5e7978632d00007c0018bd11').then(res => res.json()).then(data => {
+            ReactDOM.render(
+                React.createElement("div", {
+                    className: "text"
+                }, data.text),
+                document.getElementById('root'),
+            );
+        })
     </script>
 </body>
 </html>

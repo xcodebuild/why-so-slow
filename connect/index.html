@@ -21,12 +21,14 @@
         }
     </style>
     <script>
-        ReactDOM.render(
-            React.createElement("div", {
-                className: "text"
-            }, "test"),
-            document.getElementById('root'),
-        );
+        fetch('https://www.mocky.io/v2/5e7978632d00007c0018bd11').then(res => res.json()).then(data => {
+            ReactDOM.render(
+                React.createElement("div", {
+                    className: "text"
+                }, data.text),
+                document.getElementById('root'),
+            );
+        })
     </script>
 </body>
 </html>
